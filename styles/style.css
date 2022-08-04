@@ -20,13 +20,18 @@ html {
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: #000000;
 }
-
+.body__wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .header {
     width: 100%;
     display: flex;
@@ -40,7 +45,7 @@ a {
 .container {
     width: 100%;
     max-width: 320px;
-    padding: 10px 15px;
+    padding: 20px 15px 20px 15px;
 }
 
 .header__wrapper {
@@ -48,6 +53,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .header__top-menu {
@@ -146,7 +153,9 @@ a {
 .burger.active div:last-child {
     transform: rotate(50deg);
 }
-
+.main{
+    flex: 1;
+}
 .menu {
     margin: 0;
     padding: 0;
@@ -157,13 +166,17 @@ a {
     top: 0;
     left: 0;
     z-index: 90;
-    padding-top: 40px;
+    padding-top: 60px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
 }
 
 .menu.active {
     transform: translateX(0);
+    overflow-y: auto;
+}
+.body.lock{
+    overflow: hidden;
 }
 
 .menu__content {
@@ -184,11 +197,17 @@ a {
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
-    min-width: 150px;
+    min-width: 70%;
 }
 
 .menu__sections img {
     padding-right: 8px;
+}
+.menu__game-genres{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .games-by-genre {
@@ -201,7 +220,634 @@ a {
 
 .genre-list {
     display: none;
+    width: 100%;
 }
 .genre-list.active{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+    gap: 10px;
+}
+.genre-list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.genre-list__image{
+    padding: 15px;
+    padding-right: 7px;
+    border-radius: 15px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-menu{
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    transition: all .3s;
+    transform: translateY(-200%);
+}
+.game-banners{
+    width: 100%;
+}
+.game-banners__wrapper{
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+    position: relative;
+    z-index: 30;
+}
+.controllers-image{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 -160px -138px;
+    display: none;
+}
+.game-banner{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 20;
+}
+.game-banner__name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;    
+}
+.game-banner__section{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.views-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.game-banner__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.game-banner__views{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.views__number{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.game-banner__announcement{
+    background: url('../images/parallelogram.svg')no-repeat;
+    width: 108px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-banner__announcement div{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.game-banner1{
+    background: url('../images/game-banner1.png') no-repeat;
+    background-size: cover;
+}
+.game-banner2{
+    background: url('../images/game-banner2.png') no-repeat;
+    background-size: cover;
+}
+.game-banner3{
+    background: url('../images/game-banner3.png') no-repeat;
+    background-size: cover;
+}
+.game-banner4{
+    background: url('../images/game-banner4.png') no-repeat;
+    background-size: cover;
+}
+.game-banner5{
+    background: url('../images/game-banner5.png') no-repeat;
+    background-size: cover;
+}
+.game-banner6{
+    background: url('../images/game-banner6.png') no-repeat;
+    background-size: cover;
+}
+.heroes-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 70px;
+}
+.heroes-list__wrapper{
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heroes-list__title{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 43px;
+    color: #3C3A3B;
+    padding-bottom: 10px;    
+}
+.heroes-list__line{
+    width: 100%;
+    height: 1px;
+    background: #EC1A25;
+}
+.heroes-list__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.heroes-list__hero{
+    border: 1px solid #EC1A25;
+    border-radius: 20px;
+    background-color: #EC1A25;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #EBEBEB;
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.development{
+    text-align: end;
+    text-decoration: underline;
+}
+.logos{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.fresh-arrivals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url('../images/fresh-arrivals-background.png') no-repeat;
+    background-size: cover;
+    margin: 60px 0;
+}
+.fresh-arrivals__wrapper{
+    width: 100%;
+    max-width: 1240px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nintendo-vector{
+    display: flex;
+    padding: 22px;
+    margin-top: -50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+.fresh-arrivals__title h1{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 43px;
+    color: #FFFFFF;    
+}
+.fresh-games{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fresh-games__item{
+    background: #FFFFFF;
+    padding: 8px 8px 20px 8px;
+    border-radius: 20px;
+}
+.fresh-games__item:hover .fresh-games__name{
+    text-decoration-line: underline;
+    color: #EC1A25;    
+}
+.fresh-games__image-wrapper{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.fresh-games__name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3C3A3B;
+    padding: 8px 40px;
+}
+.fresh-games__views .views__number{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #929292;    
+}
+.fresh-games__views{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+.image-wrapper__gallery{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.read-review-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #FFFFFF;
+    gap: 8px;
+    margin: 20px;
+}
+.read-review-button:hover .parallelogram-border{
+    background: #EC1A25;
+    box-shadow: 0px 4px 20px #353535;
+}
+.parallelogram-border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+.read-review-button__arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-sets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background: #EBEBEB;
+}
+.game-sets__nintendo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    padding: 22px;
+    border-radius: 50%;
+    margin-top: -40px;
+}
+.game-sets__title{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3C3A3B;
+}
+.footer__container img{
+    width: 200px;
+}
+@media(min-width: 992px){
+    .burger{
+        display: none;
+    }
+    .game-burger{
+        display: block;
+        margin-right: 24px;
+    }
+    .game-burger.active path{
+        fill: red;
+    }
+    .top-menu__left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+    }
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        padding:0;
+    }
+    .header__top-menu{
+        padding: 20px 0 20px 0;
+    }
+    .header__bot-menu{
+        padding: 20px 0 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #EBEBEB;
+        width: 100vw;
+        background: #FBFBFB;
+        box-shadow: 0 7px 18px -5px rgb(211, 211, 211);
+    }
+    .bot-menu__wrapper{
+        width: 100%;
+        max-width: 640px;
+        justify-content: space-between;
+        height: 24px;
+    }
+    .bot-menu__wrapper img{
+        padding-right: 8px;
+    }
+    .share{
+        display: block;
+    }
+    .mouse{
+        display: block;
+        margin-left: 24px;
+    }
+    .top-menu__right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+    }
+    .game-menu{
+        z-index: 40;
+    }
+    .game-menu.active{
+        visibility: visible;
+        transform: translateY(0);
+        z-index: 40;
+    }
+    .game-menu__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: #EBEBEB;
+        box-shadow: 0px 6px 20px #EDEDED;
+    }
+    .game-menu__genre-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        max-width: 1240px;
+        padding: 24px 0 24px 0;
+    }
+    .game-menu__genre-list a{
+        display: flex;
+        flex: 0 0 33%;
+        margin: 0;
+        padding: 16px;
+    }
+    .genre-list__image img{
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    .genre-list__image{
+        margin: 0;
+        padding: 0;
+        padding:14px;
+        margin-right: 16px;
+    }
+    .genre-list__item{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .genre-list__item:hover .genre-list__image{
+        background-color: red;
+    }
+    .genre-list__item:hover .genre-list__name{
+        color: red;
+    }
+    .game-banners{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .game-banners__wrapper{
+        width: 100%;
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: 660px;
+        gap: 8px;
+        padding: 24px 0 40px 0;
+    }
+    .game-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .controllers-image{
+        display: block;
+    }
+    .game-banner:hover .game-banner__name{
+        text-decoration: underline;
+    }
+    .game-banner .game-banner__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px;
+        height: 100%;
+        width: 100%;
+    }
+    .game-banner1 .game-banner__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 40px 60px;
+    }
+    .game-banner1 .game-banner__name{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    .game-banner1 .game-banner__section{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    .views__number{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    .game-banner1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: block;
+    }
+    .fresh-arrivals{
+        background-size: 100%;
+    }
+    .nintendo-vector{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    .fresh-arrivals__title{
+        padding: 40px 0;
+    }
+    .fresh-arrivals__wrapper{
+        padding: 10px 0;
+    }
+    .fresh-arrivals__title h1{
+        font-family: 'Jura';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 43px;
+        color: #FFFFFF;
+    }
+    .fresh-games{
+        flex-direction: row;
+    }
+    .read-review-button{
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .heroes-list{
+        padding-bottom: 100px;
+    }
+    .heroes-list__wrapper{
+        max-width: 1240px;
+    }
+    .heroes-list__name{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .heroes-list__title{
+        width: 30%;
+        font-size: 36px;
+    }
+    .heroes-list__content{
+        flex-direction: row;
+        gap: 4px;
+    }
+    .hero{
+        margin-bottom: -20px;
+    }
+    .game-sets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background: #EBEBEB;
+    }
+    .game-sets__nintendo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        padding: 22px;
+        border-radius: 50%;
+        margin-top: -40px;
+    }
+    .game-sets__title{
+        font-family: 'Jura';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        color: #3C3A3B;
+    }
+    .footer__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+        font-size: 15px;
+    }
+    .logos{
+        grid-column-start: unset;
+        grid-column-end: unset;
+        order: unset;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 60px;
+    }
 }

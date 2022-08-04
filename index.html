@@ -7,11 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Play Switch</title>
 </head>
-<body>
+<body class="body" id="body">
     <div class="body__wrapper">
         <header class="header">
             <div class="container">
@@ -19,7 +25,19 @@
                     <div class="header__top-menu">
                         <div class="top-menu__left">
                             <a href="#" class="game-burger">
-                                <img src="images/game-burger.svg" alt="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1640_467)">
+                                        <path d="M7 0H4C2.93913 0 1.92172 0.421427 1.17157 1.17157C0.421427 1.92172 0 2.93913 0 4L0 7C0 8.06087 0.421427 9.07828 1.17157 9.82843C1.92172 10.5786 2.93913 11 4 11H7C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V4C11 2.93913 10.5786 1.92172 9.82843 1.17157C9.07828 0.421427 8.06087 0 7 0V0ZM9 7C9 7.53043 8.78929 8.03914 8.41421 8.41421C8.03914 8.78929 7.53043 9 7 9H4C3.46957 9 2.96086 8.78929 2.58579 8.41421C2.21071 8.03914 2 7.53043 2 7V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H7C7.53043 2 8.03914 2.21071 8.41421 2.58579C8.78929 2.96086 9 3.46957 9 4V7Z" fill="#929292"/>
+                                        <path d="M20 0H17C15.9391 0 14.9217 0.421427 14.1716 1.17157C13.4214 1.92172 13 2.93913 13 4V7C13 8.06087 13.4214 9.07828 14.1716 9.82843C14.9217 10.5786 15.9391 11 17 11H20C21.0609 11 22.0783 10.5786 22.8284 9.82843C23.5786 9.07828 24 8.06087 24 7V4C24 2.93913 23.5786 1.92172 22.8284 1.17157C22.0783 0.421427 21.0609 0 20 0V0ZM22 7C22 7.53043 21.7893 8.03914 21.4142 8.41421C21.0391 8.78929 20.5304 9 20 9H17C16.4696 9 15.9609 8.78929 15.5858 8.41421C15.2107 8.03914 15 7.53043 15 7V4C15 3.46957 15.2107 2.96086 15.5858 2.58579C15.9609 2.21071 16.4696 2 17 2H20C20.5304 2 21.0391 2.21071 21.4142 2.58579C21.7893 2.96086 22 3.46957 22 4V7Z" fill="#929292"/>
+                                        <path d="M7 13H4C2.93913 13 1.92172 13.4214 1.17157 14.1716C0.421427 14.9217 0 15.9391 0 17L0 20C0 21.0609 0.421427 22.0783 1.17157 22.8284C1.92172 23.5786 2.93913 24 4 24H7C8.06087 24 9.07828 23.5786 9.82843 22.8284C10.5786 22.0783 11 21.0609 11 20V17C11 15.9391 10.5786 14.9217 9.82843 14.1716C9.07828 13.4214 8.06087 13 7 13ZM9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V17C2 16.4696 2.21071 15.9609 2.58579 15.5858C2.96086 15.2107 3.46957 15 4 15H7C7.53043 15 8.03914 15.2107 8.41421 15.5858C8.78929 15.9609 9 16.4696 9 17V20Z" fill="#929292"/>
+                                        <path d="M20 13H17C15.9391 13 14.9217 13.4214 14.1716 14.1716C13.4214 14.9217 13 15.9391 13 17V20C13 21.0609 13.4214 22.0783 14.1716 22.8284C14.9217 23.5786 15.9391 24 17 24H20C21.0609 24 22.0783 23.5786 22.8284 22.8284C23.5786 22.0783 24 21.0609 24 20V17C24 15.9391 23.5786 14.9217 22.8284 14.1716C22.0783 13.4214 21.0609 13 20 13ZM22 20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H17C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20V17C15 16.4696 15.2107 15.9609 15.5858 15.5858C15.9609 15.2107 16.4696 15 17 15H20C20.5304 15 21.0391 15.2107 21.4142 15.5858C21.7893 15.9609 22 16.4696 22 17V20Z" fill="#929292"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1640_467">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
                             </a>
                             <a href="#" class="search">
                                 <img src="images/search.svg" alt="">
@@ -65,39 +83,560 @@
                 </div>
             </div>
         </header>
-        <menu class="menu" id="menu">
-            <div class="menu__content">
-                <div class="menu__sections">
-                    <a href="#" class="articles bot-menu__item">
-                        <img src="images/book-icon.svg" alt="">
-                        <p>Статьи</p>
-                    </a>
-                    <a href="#" class="reviews bot-menu__item">
-                        <img src="images/play-icon.svg" alt="">
-                        <p>Обзоры</p>
-                    </a>
-                    <a href="#" class="collection bot-menu__item">
-                        <img src="images/bookmark-icon.svg" alt="">
-                        <p>Коллекция</p>
-                    </a>
-                    <a href="#" class="sets bot-menu__item">
-                        <img src="images/star-icon.svg" alt="">
-                        <p>Сеты</p>
-                    </a>
-                    <div class="menu__game-genres">
-                        <a href="#" class="games-by-genre" id="games-by-genre">
-                            <p>Игры по жанрам</p>
-                            <div class="genre-list">
-                                <p>asdasd</p>
-                                <p>asdadas</p>
+        <main class="main">
+            <menu class="menu" id="menu">
+                <div class="menu__content">
+                    <div class="menu__sections">
+                        <a href="#" class="articles bot-menu__item">
+                            <img src="images/book-icon.svg" alt="">
+                            <p>Статьи</p>
+                        </a>
+                        <a href="#" class="reviews bot-menu__item">
+                            <img src="images/play-icon.svg" alt="">
+                            <p>Обзоры</p>
+                        </a>
+                        <a href="#" class="collection bot-menu__item">
+                            <img src="images/bookmark-icon.svg" alt="">
+                            <p>Коллекция</p>
+                        </a>
+                        <a href="#" class="sets bot-menu__item">
+                            <img src="images/star-icon.svg" alt="">
+                            <p>Сеты</p>
+                        </a>
+                        <div class="menu__game-genres">
+                            <a href="#" class="games-by-genre" id="games-by-genre">
+                                <p>Игры по жанрам</p>
+                            </a>
+                        </div>
+                        <div class="genre-list" id="genre-list">
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/platform.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Platform
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/fighting.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Fighting
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/rpg.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    RPG
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/beatemup.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Beat’em Up
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/bullet-hell.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Bullet Hell
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/simulator.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Simulator
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/shooter.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Shoot’em All
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/Metroidovania.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Metroidovania
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/sport.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Sport
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/action.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Action
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="images/adventure.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Adventure
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <menu class="game-menu" id="game-menu">
+                <div class="game-menu__content">
+                    <div class="game-menu__genre-list" id="game-menu__genre-list">
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/platform.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Platform
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/fighting.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Fighting
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/rpg.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                RPG
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/beatemup.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Beat’em Up
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/bullet-hell.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Bullet Hell
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/simulator.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Simulator
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/shooter.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Shoot’em All
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/Metroidovania.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Metroidovania
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/sport.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Sport
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/action.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Action
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="images/adventure.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Adventure
                             </div>
                         </a>
                     </div>
                 </div>
+            </menu>
+            <div class="game-banners">
+                <div class="game-banners__wrapper">
+                    <a href="#" class="game-banner1 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>Review</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            220
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="game-banner2 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>New</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="game-banner3 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>New</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        Metro Redux is now available on Nintendo Switch
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="game-banner4 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>New</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        9 monkey of Shaolin
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="game-banner5 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>New</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        Mario Golf: Super Rush gets new Japanese commercials
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="game-banner6 game-banner">
+                        <div class="game-banner__content">
+                            <div class="game-banner__announcement">
+                                <div>Update</div>
+                            </div>
+                            <div class="game-banner__items">
+                                <div class="game-banner__item">
+                                    <div class="game-banner__name">
+                                        Limited Run Games 2021
+                                    </div>
+                                    <div class="game-banner__section">
+                                        Scott Pilgrim vs world
+                                    </div>
+                                </div>
+                                <div class="views-wrapper">
+                                    <div class="game-banner__views">
+                                        <div class="views__eye">
+                                            <img src="images/icon-view.svg" alt="">
+                                        </div>
+                                        <div class="views__number">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="controllers-image">
+                        <img src="images/controllers-icon.png" alt="">
+                    </div>
+                </div>
             </div>
-        </menu>
-    </div>
+            <div class="fresh-arrivals">
+                <div class="fresh-arrivals__wrapper">
+                    <div class="nintendo-vector">
+                        <img src="images/nintendo-vector.svg" alt="">
+                    </div>
+                    <div class="fresh-arrivals__title">
+                       <h1>Свежие поступления</h1>
+                    </div>
+                    <div class="fresh-games">
+                        <a href="#" class="fresh-games__item">
+                            <div class="fresh-games__image-wrapper">
+                                <img src="images/fresh-game1.png" alt="">
+                                <img class="image-wrapper__gallery" src="images/gallery.svg" alt="">
+                            </div>
+                            <div class="fresh-games__name">
+                                Mario Golf: Super Rush gets new Japanese
+                            </div>
+                            <div class="fresh-games__views">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8729 9.61109C19.6942 9.36667 15.4371 3.62646 9.9999 3.62646C4.56274 3.62646 0.305391 9.36667 0.126914 9.61085C-0.0423048 9.84273 -0.0423048 10.1572 0.126914 10.3891C0.305391 10.6335 4.56274 16.3737 9.9999 16.3737C15.4371 16.3737 19.6942 10.6335 19.8729 10.3893C20.0423 10.1575 20.0423 9.84273 19.8729 9.61109ZM9.9999 15.055C5.99486 15.055 2.52606 11.2452 1.49922 9.99964C2.52473 8.75304 5.98626 4.94514 9.9999 4.94514C14.0048 4.94514 17.4733 8.75436 18.5006 10.0005C17.4751 11.2471 14.0135 15.055 9.9999 15.055Z" fill="#929292"/>
+                                    <path d="M10 6.04395C7.81868 6.04395 6.04395 7.81868 6.04395 10C6.04395 12.1813 7.81868 13.9561 10 13.9561C12.1813 13.9561 13.9561 12.1813 13.9561 10C13.9561 7.81868 12.1813 6.04395 10 6.04395ZM10 12.6374C8.54571 12.6374 7.36266 11.4543 7.36266 10C7.36266 8.54575 8.54575 7.36266 10 7.36266C11.4543 7.36266 12.6374 8.54575 12.6374 10C12.6374 11.4543 11.4543 12.6374 10 12.6374Z" fill="#929292"/>
+                                </svg>                                        
+                                <div class="views__number">
+                                    2
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="fresh-games__item">
+                            <div class="fresh-games__image-wrapper">
+                                <img src="images/fresh-game2.png" alt="">
+                                <img class="image-wrapper__gallery" src="images/gallery.svg" alt="">
+                            </div>
+                            <div class="fresh-games__name">
+                                Mario Golf: Super Rush gets new Japanese
+                            </div>
+                            <div class="fresh-games__views">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8729 9.61109C19.6942 9.36667 15.4371 3.62646 9.9999 3.62646C4.56274 3.62646 0.305391 9.36667 0.126914 9.61085C-0.0423048 9.84273 -0.0423048 10.1572 0.126914 10.3891C0.305391 10.6335 4.56274 16.3737 9.9999 16.3737C15.4371 16.3737 19.6942 10.6335 19.8729 10.3893C20.0423 10.1575 20.0423 9.84273 19.8729 9.61109ZM9.9999 15.055C5.99486 15.055 2.52606 11.2452 1.49922 9.99964C2.52473 8.75304 5.98626 4.94514 9.9999 4.94514C14.0048 4.94514 17.4733 8.75436 18.5006 10.0005C17.4751 11.2471 14.0135 15.055 9.9999 15.055Z" fill="#929292"/>
+                                    <path d="M10 6.04395C7.81868 6.04395 6.04395 7.81868 6.04395 10C6.04395 12.1813 7.81868 13.9561 10 13.9561C12.1813 13.9561 13.9561 12.1813 13.9561 10C13.9561 7.81868 12.1813 6.04395 10 6.04395ZM10 12.6374C8.54571 12.6374 7.36266 11.4543 7.36266 10C7.36266 8.54575 8.54575 7.36266 10 7.36266C11.4543 7.36266 12.6374 8.54575 12.6374 10C12.6374 11.4543 11.4543 12.6374 10 12.6374Z" fill="#929292"/>
+                                </svg>                                        
+                                <div class="views__number">
+                                    22
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="fresh-games__item">
+                            <div class="fresh-games__image-wrapper">
+                                <img src="images/fresh-game3.png" alt="">
+                                <img class="image-wrapper__gallery" src="images/gallery.svg" alt="">
+                            </div>
+                            <div class="fresh-games__name">
+                                Mario Golf: Super Rush gets new Japanese
+                            </div>
+                            <div class="fresh-games__views">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8729 9.61109C19.6942 9.36667 15.4371 3.62646 9.9999 3.62646C4.56274 3.62646 0.305391 9.36667 0.126914 9.61085C-0.0423048 9.84273 -0.0423048 10.1572 0.126914 10.3891C0.305391 10.6335 4.56274 16.3737 9.9999 16.3737C15.4371 16.3737 19.6942 10.6335 19.8729 10.3893C20.0423 10.1575 20.0423 9.84273 19.8729 9.61109ZM9.9999 15.055C5.99486 15.055 2.52606 11.2452 1.49922 9.99964C2.52473 8.75304 5.98626 4.94514 9.9999 4.94514C14.0048 4.94514 17.4733 8.75436 18.5006 10.0005C17.4751 11.2471 14.0135 15.055 9.9999 15.055Z" fill="#929292"/>
+                                    <path d="M10 6.04395C7.81868 6.04395 6.04395 7.81868 6.04395 10C6.04395 12.1813 7.81868 13.9561 10 13.9561C12.1813 13.9561 13.9561 12.1813 13.9561 10C13.9561 7.81868 12.1813 6.04395 10 6.04395ZM10 12.6374C8.54571 12.6374 7.36266 11.4543 7.36266 10C7.36266 8.54575 8.54575 7.36266 10 7.36266C11.4543 7.36266 12.6374 8.54575 12.6374 10C12.6374 11.4543 11.4543 12.6374 10 12.6374Z" fill="#929292"/>
+                                </svg>                                        
+                                <div class="views__number">
+                                    22
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="fresh-games__item">
+                            <div class="fresh-games__image-wrapper">
+                                <img src="images/fresh-game4.png" alt="">
+                                <img class="image-wrapper__gallery" src="images/gallery.svg" alt="">
+                            </div>
+                            <div class="fresh-games__name">
+                                Mario Golf: Super Rush gets new Japanese
+                            </div>
+                            <div class="fresh-games__views">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8729 9.61109C19.6942 9.36667 15.4371 3.62646 9.9999 3.62646C4.56274 3.62646 0.305391 9.36667 0.126914 9.61085C-0.0423048 9.84273 -0.0423048 10.1572 0.126914 10.3891C0.305391 10.6335 4.56274 16.3737 9.9999 16.3737C15.4371 16.3737 19.6942 10.6335 19.8729 10.3893C20.0423 10.1575 20.0423 9.84273 19.8729 9.61109ZM9.9999 15.055C5.99486 15.055 2.52606 11.2452 1.49922 9.99964C2.52473 8.75304 5.98626 4.94514 9.9999 4.94514C14.0048 4.94514 17.4733 8.75436 18.5006 10.0005C17.4751 11.2471 14.0135 15.055 9.9999 15.055Z" fill="#929292"/>
+                                    <path d="M10 6.04395C7.81868 6.04395 6.04395 7.81868 6.04395 10C6.04395 12.1813 7.81868 13.9561 10 13.9561C12.1813 13.9561 13.9561 12.1813 13.9561 10C13.9561 7.81868 12.1813 6.04395 10 6.04395ZM10 12.6374C8.54571 12.6374 7.36266 11.4543 7.36266 10C7.36266 8.54575 8.54575 7.36266 10 7.36266C11.4543 7.36266 12.6374 8.54575 12.6374 10C12.6374 11.4543 11.4543 12.6374 10 12.6374Z" fill="#929292"/>
+                                </svg>                                        
+                                <div class="views__number">
+                                    22
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="read-review-button" href="#">
+                        <img class="parallelogram-border" src="images/parallelogram-border.svg" alt="">
+                        <div class="read-review-button__text">
+                            Читать обзор
+                        </div>
+                        <div class="read-review-button__arrow">
+                            <img src="images/right-arrow.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="heroes-list">
+                <div class="heroes-list__wrapper">
+                    <div class="heroes-list__name">
+                        <div class="heroes-list__title">
+                            Главные герои
+                        </div>
+                        <div class="heroes-list__line">
 
+                        </div>
+                    </div>
+                    <div class="heroes-list__content">
+                        <a class="heroes-list__hero" href="#">
+                            <img src="images/hero1.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero hero" href="#">
+                            <img src="images/hero2.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero" href="#">
+                            <img src="images/hero3.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero hero" href="#">
+                            <img src="images/hero4.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero" href="#">
+                            <img src="images/hero5.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero hero" href="#">
+                            <img src="images/hero6.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero" href="#">
+                            <img src="images/hero7.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero hero" href="#">
+                            <img src="images/hero8.png" alt="">
+                        </a>
+                        <a class="heroes-list__hero" href="#">
+                            <img src="images/hero9.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-sets">
+                <div class="game-sets__nintendo">
+                    <img src="images/nintendo-vector.svg" alt="">
+                </div>
+                <div class="game-sets__title">
+                    Cеты игр
+                </div>
+                <div class="game-sets__slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="game-sets__slide-wrapper">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="relevance">
+                    ©2022. Play Switch
+                </div>
+                <div class="logos">
+                    <a href="#" class="logo-nintendo">
+                        <img src="images/logo-nintengo.png" alt="">
+                    </a>
+                    <a href="#" class="logo-super-nintendo">
+                        <img src="images/Nintendo-Switch-Logo.png" alt="">
+                    </a>
+                </div>
+                <a href="#" class="development">
+                    Разработка сайта
+                </a>
+            </div>
+        </footer>
+    </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
