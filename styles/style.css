@@ -262,6 +262,7 @@ a {
     gap: 10px;
     position: relative;
     z-index: 30;
+    justify-content: center;
 }
 .controllers-image{
     position: absolute;
@@ -273,6 +274,7 @@ a {
 }
 .game-banner{
     width: 100%;
+    max-width: 420px;
     height: auto;
     padding: 10px;
     padding-top: 60px;
@@ -438,7 +440,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: url('../images/fresh-arrivals-background.png') no-repeat;
+    background: linear-gradient( rgba(44, 44, 44, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/fresh-arrivals-background.png') no-repeat;
     background-size: cover;
     margin: 60px 0;
 }
@@ -475,6 +477,7 @@ a {
     background: #FFFFFF;
     padding: 8px 8px 20px 8px;
     border-radius: 20px;
+    max-width: 300px;
 }
 .fresh-games__item:hover .fresh-games__name{
     text-decoration-line: underline;
@@ -548,7 +551,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 600px;
+    padding-bottom: 50px;
     background: #EBEBEB;
 }
 .game-sets__nintendo{
@@ -567,6 +570,183 @@ a {
     font-size: 36px;
     line-height: 43px;
     color: #3C3A3B;
+}
+.game-sets__slider{
+    width: 100%;
+}
+.game-sets__slide-wrapper{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    background: url('../images/game-sets-image.png') no-repeat;
+    background-size: cover;
+    height: 160px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+}
+.swiper-slide{
+    padding: 20px 0;
+}
+.swiper-slide-active .game-sets__slide-wrapper::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  linear-gradient(180deg, transparent, #000000 100%) no-repeat;
+    z-index: 20;
+}
+.slide-wrapper__content{
+    display: none;
+    position: relative;
+    z-index: 30;
+}
+.swiper-slide-active .slide-wrapper__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 10px;
+}
+.sets-icon img{
+    width: 60px;
+}
+.slide-wrapper__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.slide-wrapper__updates{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.slider__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.slider-navigation{
+    padding-bottom: 20px;
+}
+.game-sets-slider__prev, .game-sets-slider__next{
+    cursor: pointer;
+}
+.game-sets-slider__prev:hover .main-path{
+    fill: red;
+}
+.game-sets-slider__next:hover .main-path{
+    fill: red;
+}
+.see-more-sets{
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-more-sets a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-more-sets p{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;    
+}
+.game-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+.game-reviews__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game-reviews__title{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3C3A3B;
+    text-align: center;
+    padding: 20px;
+}
+.game-reviews__line{
+    width: 100%;
+    height: 1px;
+    background: red;
+}
+.see-more-reviews{
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-more-reviews a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-more-reviews p{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;    
+}
+.game-reviews__content{
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+}
+.game-reviews__game1{
+    background: url('../images/game-reviews__game1.png') no-repeat;
+    background-size: cover;
+}
+.game-reviews__game2{
+    background: url('../images/game-reviews__game2.png') no-repeat;
+    background-size: cover;
+}
+.go-top-button{
+    display: none;
+    position: fixed;
+    bottom: -5px;
+    right: -5px;
+    z-index: 99;
+    cursor: pointer;
+}
+.go-top-button svg{
+    width: 100px;
 }
 .footer__container img{
     width: 200px;
@@ -605,6 +785,18 @@ a {
         width: 100vw;
         background: #FBFBFB;
         box-shadow: 0 7px 18px -5px rgb(211, 211, 211);
+    }
+    .header__bot-menu a{
+        padding: 0 40px;
+        margin: 0;
+        gap: 8px;
+    }
+    .header__bot-menu a:hover{
+        background: red;
+        color: #FFFFFF;
+    }
+    .header__bot-menu a:hover path{
+        fill: #FFFFFF;
     }
     .bot-menu__wrapper{
         width: 100%;
@@ -695,11 +887,13 @@ a {
         height: 660px;
         gap: 8px;
         padding: 24px 0 40px 0;
+        justify-content: center;
     }
     .game-banner{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        max-width: none;
     }
     .controllers-image{
         display: block;
@@ -752,15 +946,12 @@ a {
         grid-row-end: 3;
         display: block;
     }
-    .fresh-arrivals{
-        background-size: 100%;
-    }
     .nintendo-vector{
-        padding: 0;
+        padding: 22px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -30px;
+        margin-top: -50px;
     }
     .fresh-arrivals__title{
         padding: 40px 0;
@@ -778,6 +969,9 @@ a {
     }
     .fresh-games{
         flex-direction: row;
+    }
+    .fresh-games__item{
+        max-width: 220px;
     }
     .read-review-button{
         margin-top: 40px;
@@ -807,13 +1001,18 @@ a {
     .hero{
         margin-bottom: -20px;
     }
+    .heroes-list__hero img{
+        width: 100px;
+    }
     .game-sets{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 600px;
         background: #EBEBEB;
+    }
+    .game-sets-slider{
+        position: relative;
     }
     .game-sets__nintendo{
         display: flex;
@@ -832,6 +1031,110 @@ a {
         line-height: 43px;
         color: #3C3A3B;
     }
+    .game-sets__slide-wrapper{
+        height: 400px;
+        width: 100%;
+        max-width: 940px;
+        margin: 40px 0;
+    }
+    .slide-wrapper__content{
+        width: 100%;
+        max-width: 80%;
+    }
+    .swiper-slide-active .slide-wrapper__content{
+        width: 100%;
+        max-width: 80%;
+        padding: 60px 80px;
+    }
+    .sets-icon img{
+        width: auto;
+    }
+    .slide-wrapper__title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .slide-wrapper__updates{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .swiper-slide-active .game-sets__slide-wrapper{
+        height: 460px;
+        margin: 10px 0;
+    }
+    .slider-navigation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        z-index: 40;
+    }
+    .slider__buttons{
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+    .game-reviews{
+        width: 100%;
+    }
+    .game-reviews__head{
+        width: 100%;
+        max-width: 960px;
+        display: flex;
+        flex-direction: row;
+    }
+    .game-reviews__content{
+        flex-direction: row;
+        width: 100%;
+        max-width: 960px;
+    }
+    .game-reviews__game1, .game-reviews__game2{
+        height: 380px;
+    }
+    .game-reviews__game1 .game-banner__name{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    .game-reviews__game2 .game-banner__name{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    .game-reviews__game1 .game-banner__section{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;        
+    }
+    .game-reviews__game2 .game-banner__section{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;  
+    }
+    .go-top-button{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .go-top-button svg{
+        width: auto;
+    }
     .footer__container{
         display: flex;
         align-items: center;
@@ -849,5 +1152,33 @@ a {
         justify-content: center;
         padding: 0;
         gap: 60px;
+    }
+}
+@media(min-width: 1200px){
+    .fresh-games__item{
+        max-width: 240px;
+    }
+    .heroes-list__hero img{
+        width: 120px;
+    }
+    .game-reviews__head{
+        max-width: 1120px;
+    }
+    .game-reviews__content{
+        max-width: 1120px;
+    }
+}
+@media(min-width: 1440px){
+    .fresh-games__item{
+        max-width: 300px;
+    }
+    .heroes-list__hero img{
+        width: auto;
+    }
+    .game-reviews__head{
+        max-width: 1240px;
+    }
+    .game-reviews__content{
+        max-width: 1240px;
     }
 }
