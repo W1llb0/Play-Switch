@@ -66,3 +66,21 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var detailSwiper = new Swiper("#swiper1", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  direction: "vertical",
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var detailSwiper2 = new Swiper("#swiper2", {
+  spaceBetween: 10,
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+  thumbs: {
+    swiper: detailSwiper,
+  },
+});

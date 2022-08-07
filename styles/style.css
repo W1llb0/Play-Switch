@@ -748,6 +748,523 @@ a {
 .go-top-button svg{
     width: 100px;
 }
+.navigation-road{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FBFBFB;
+}
+.navigation-road__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    gap: 16px;
+}
+.navigation-road__wrapper a:not(:last-child){
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #929292;    
+}
+.navigation-road__game{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #3C3A3B;
+}
+.separator{
+    border: 1px solid #929292;
+    padding: 4px;
+    border-radius: 50%;
+}
+.current-game-review{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FBFBFB;
+}
+.current-game-review__wrapper{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.current-game-review__card{
+    width: 100%;
+    max-width: 320px;
+}
+.current-game-review__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.current-game-review__image img{
+    width: 100%;
+    height: 100%;
+}
+.time-to-pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+.time-to-pass img{
+    width: 100%;
+}
+.time-to-pass p{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+.current-game-info{
+    display: flex;
+    flex-direction: column;
+}
+.current-game-name{
+    width: 100%;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #3C3A3B;
+    border-bottom: 1px solid #EC1A25;
+    padding-bottom: 20px;    
+}
+.current-game-additional-info{
+    display: flex;
+    gap: 4%;
+    padding: 20px 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+.current-game-additional-info div{
+    flex: 0 0 48%;
+}
+.current-game-genre__name{
+    padding-bottom: 8px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #EC1A25;    
+}
+.current-game-developer__name{
+    padding-bottom: 8px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #EC1A25;    
+}
+.current-game-genre__content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #3C3A3B;
+}
+.current-game-developer__content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #3C3A3B;
+}
+.backstory{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.current-game-review__wrapper h2{
+    width: 100%;
+    border-left: 1px solid #EC1A25;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #3C3A3B;
+    padding: 0;
+    margin: 0;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+.backstory__content{
+    width: 100%;
+    padding-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.backstory__image{
+    width: 100%;
+}
+.backstory__image img{
+    width: 100%;
+}
+.gameplay-review{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.gameplay-review__content{
+    width: 100%;
+    padding-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.gameplay-review__images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.gameplay-review__images img{
+    width: 100%;
+}
+.game-info-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 40px 0;
+}
+.game-info-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 17px;
+}
+.game-info-list li{
+    color: #EC1A25;
+    padding: 0;
+}
+.game-info-list span{
+    width: 100%;
+    padding-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.game-info-list__image{
+    width: 100%;
+}
+.game-info-list__image img{
+    width: 100%;
+}
+.quote-example{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 40px 0;
+}
+.quote-card{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    background: #EBEBEB;
+    box-shadow: 0px 6px 20px #EDEDED;
+    overflow: hidden;
+}
+.quote-card__left{
+    flex: 0 0 15%;
+    background: #EC1A25;
+}
+.quote-card__quote-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.quote-card__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-card__content{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+    padding: 20px 40px;
+}
+.game-opinion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.game-opinion ul{
+    margin: 0;
+    padding: 0 20px 20px 40px;
+}
+.pleased{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border-bottom: 8px solid #01BA00;
+    box-shadow: 0px 6px 20px #EDEDED;
+}
+.pleased li{
+    color: #01BA00;
+}
+.pleased span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.upset{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border-bottom: 8px solid #EC1A25;
+    box-shadow: 0px 6px 20px #EDEDED;
+}
+.upset li{
+    color: #EC1A25;
+}
+.upset span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.upset__title, .pleased__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px; 
+}
+.pleased__title{
+    color: #01BA00;   
+}
+.upset__title{
+    color: #EC1A25;
+}
+.upset__image{
+    width: 100%;
+}
+.upset__image img{
+    width: 100%;
+    padding: 20px;
+}
+.pleased__image{
+    width: 100%;
+}
+.pleased__image img{
+    width: 100%;
+    padding: 20px;
+}
+.current-game-review__review-result{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EBEBEB;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+.review-result__wrapper{
+    width: 100%;
+    max-width: 320px;
+    padding: 40px 20px;
+}
+.review-result__wrapper h2{
+    color: #EC1A25;    
+}
+.review-result__content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #3C3A3B;    
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FBFBFB;
+}
+.game-detailed-card{
+    width: 100%;
+    max-width: 1240px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px #EDEDED;
+    border-radius: 20px;
+}
+.game-detailed-card__wrapper{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.game-detailed-card__left-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.detail-slider1{
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.detail-slider2{
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 72%;
+    flex: 0 0 72%;
+    height: 100%;
+}
+.game-detailed-card__left-item .detail-slide__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.detail-slider1 .swiper-slide{
+    max-height: 100px;
+    width: 100%;
+}
+.detail-slider2 .swiper-wrapper{
+    max-height: 600px;
+}
+.detail-slider2 .swiper-slide{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    background: url(../images/detail-slide1.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.detail-slider2 img{
+    height: 500px;
+}
+.right-item__game-title{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3C3A3B;
+    margin-bottom: 8px;
+}
+.right-item__underline{
+    height: 1px;
+    width: 80px;
+    background: #EC1A25;
+}
+.game-detailed-card__right-item div:not(:last-child){
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #3C3A3B;  
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
+}
+.game-detailed-card__right-item span{
+    color: #EC1A25;
+}
+.right-item__detail-genre, .right-item__detail-developer, .right-item__limited-edition, .right-item__detail-set, .right-item__release-date{
+    padding: 20px 0;
+}
+.read-more-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.read-more-button__content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.read-more-button__content p{
+    color: #FFFFFF;
+}
+.read-more-button:hover path{
+    fill: #EC1A25;
+    box-shadow: 0px 4px 40px #E9A0A4;
+}
+.game-catalog{
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1240px;
+}
+.game-catalog__game1{
+    background: url('../images/game-banner4.png') no-repeat;
+    background-size: cover;
+    height: 200px;
+}
 .footer__container img{
     width: 200px;
 }
@@ -1135,6 +1652,96 @@ a {
     .go-top-button svg{
         width: auto;
     }
+    .navigation-road__wrapper a:first-child{
+        font-size: 17px;   
+    }
+    .navigation-road__wrapper a:not(:first-child):not(:last-child){
+        font-size: 17px;   
+    }
+    .navigation-road__wrapper a{
+        font-size: 17px;   
+    }
+    .current-game-review__wrapper{
+        width: 100%;
+        max-width: 1240px;
+    }
+    .current-game-review__card{
+        width: 100%;
+        max-width: none;
+        padding: 0 150px;
+    }
+    .current-game-review__content-wrapper{
+        padding: 40px 60px;
+        border-radius: 20px;
+        margin-top: -110px;
+        background: #FBFBFB;
+    }
+    .time-to-pass__wrapper{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .time-to-pass{
+        justify-content: flex-start;
+        text-align: center;
+        width: auto;
+        justify-content: center;
+        left: 0;
+        padding-left: 0;
+    }
+    .time-to-pass img{
+        width: auto;        
+    }
+    .time-to-pass p{
+        align-items: center;
+        justify-content: center;
+    }
+    .current-game-name{
+        font-size: 36px;
+    }
+    .current-game-additional-info{
+        gap: 16%;
+    }
+    .current-game-additional-info div{
+        flex: 0 0 42%;
+    }
+    .current-game-genre__name, .current-game-genre__content, .current-game-developer__name, .current-game-developer__content{
+        font-size: 17px;
+    }
+    .gameplay-review{
+        padding-top: 0;
+    }
+    .game-opinion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        padding-bottom: 0;
+        margin-bottom: -80px;
+        position: relative;
+        z-index: 30;
+    }
+    .game-opinion div{
+        flex: 0 0 48%;
+    }
+    .review-result{
+        position: relative;
+        z-index: 20;
+    }
+    .review-result__wrapper{
+        max-width: none;
+        padding: 120px 210px 80px 210px;
+    }
+    .game-detailed-card__wrapper{
+        flex-direction: row;
+        gap: 4%;
+    }
+    .game-detailed-card__left-item, .game-detailed-card__right-item{
+        width: 48%;
+    }
+    .read-more-button__wrapper{
+        display: flex;
+    }
     .footer__container{
         display: flex;
         align-items: center;
@@ -1180,5 +1787,8 @@ a {
     }
     .game-reviews__content{
         max-width: 1240px;
+    }
+    .current-game-review__wrapper{
+        padding: 0;
     }
 }
