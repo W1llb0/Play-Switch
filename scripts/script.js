@@ -28,21 +28,22 @@ const gameSets = new Swiper('#game-sets', {
   spaceBetween: 20,
   initialSlide: 2,
   centeredSlides: true,
-  slidesPerView: 1,
-  breakpoints: {
-    650: {
-      slidesPerView: 1,
-    },
-    992: {
-      slidesPerView: 2,
-    },
-    1300: {
-      slidesPerView: 3,
-    }
-  },
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  // breakpoints: {
+  //   650: {
+  //     slidesPerView: 1,
+  //   },
+  //   992: {
+  //     slidesPerView: 2,
+  //   },
+  //   1300: {
+  //     slidesPerView: 3,
+  //   }
+  // },
   navigation: {
-      nextEl: '.game-sets-slider__next',
-      prevEl: '.game-sets-slider__prev'
+    nextEl: '.game-sets-slider__next',
+    prevEl: '.game-sets-slider__prev'
   },
   // pagination: {
   //     el: '.slider-pagination',
@@ -51,36 +52,47 @@ const gameSets = new Swiper('#game-sets', {
 });
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 var detailSwiper = new Swiper("#swiper1", {
   spaceBetween: 10,
   slidesPerView: 3,
-  direction: "vertical",
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    992: {
+      direction: "vertical",
+    },
+  },
 });
 var detailSwiper2 = new Swiper("#swiper2", {
   spaceBetween: 10,
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: '.game-sets-slider__next',
+    prevEl: '.game-sets-slider__prev'
+  },
   thumbs: {
     swiper: detailSwiper,
   },
+});
+
+const gameCatalogSection = document.querySelectorAll(".game-catalog-section");
+gameCatalogSection.forEach(function (item) {
+  item.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 });
