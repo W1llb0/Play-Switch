@@ -64,6 +64,41 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+}
+
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.search-wrapper.active{
+    background: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.search-wrapper.active input{
+    display: block;
+}
+.search-wrapper.active .search__button{
+    display: block;
+}
+.search-wrapper input{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #929292;
+    border: none;
+    transition: all 0.8s ease;   
+    display: none; 
+}
+.search__button{
+    display: none;
 }
 
 .game-burger {
@@ -1722,6 +1757,40 @@ a {
 
     .header__top-menu {
         padding: 20px 0 20px 0;
+    }
+
+    .search-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .search-wrapper.active{
+        background: #FFFFFF;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    .search-wrapper.active input{
+        display: block;
+    }
+    .search-wrapper.active .search__button{
+        display: block;
+    }
+    .search-wrapper input{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #929292;
+        border: none;
+        transition: all 0.8s ease;   
+        display: none; 
+    }
+    .search__button{
+        display: none;
     }
 
     .header__bot-menu {

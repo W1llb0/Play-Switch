@@ -96,3 +96,11 @@ gameCatalogSection.forEach(function (item) {
     this.classList.toggle("active");
   });
 });
+
+const search = document.querySelectorAll(".search");
+search.forEach(function (item) {
+  item.addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.getElementById("search-wrapper").classList.toggle("active");
+  });
+});
