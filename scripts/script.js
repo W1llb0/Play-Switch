@@ -102,5 +102,6 @@ search.forEach(function (item) {
   item.addEventListener("click", function () {
     this.classList.toggle("active");
     document.getElementById("search-wrapper").classList.toggle("active");
+    document.getElementById("search__button").classList.toggle("active");
   });
 });
