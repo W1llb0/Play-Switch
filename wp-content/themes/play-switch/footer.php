@@ -1,34 +1,23 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Play-switch
- */
-
-?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'play-switch' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'play-switch' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'play-switch' ), 'play-switch', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+<footer class="footer">
+            <div class="container footer__container">
+                <div class="relevance">
+                    ©2022. Play Switch
+                </div>
+                <div class="logos">
+                    <a href="#" class="logo-nintendo">
+                        <img src="images/logo-nintengo.png" alt="">
+                    </a>
+                    <a href="#" class="logo-super-nintendo">
+                        <img src="images/Nintendo-Switch-Logo.png" alt="">
+                    </a>
+                </div>
+                <a href="#" class="development">
+                    Разработка сайта
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
