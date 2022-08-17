@@ -1391,7 +1391,12 @@ a {
     padding: 10px;
 }
 
-.detail-slider1 .swiper-slide-active {
+/* .detail-slider1 .swiper-slide-active {
+    border: 2px solid #EC1A25;
+    border-radius: 16px;
+    overflow: hidden;
+} */
+.detail-slider1 .swiper-slide-thumb-active {
     border: 2px solid #EC1A25;
     border-radius: 16px;
     overflow: hidden;
