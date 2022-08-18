@@ -295,6 +295,9 @@ a {
     display: none;
     width: 100%;
 }
+.genre-list.active a{
+    border: none;
+}
 
 .genre-list.active {
     display: grid;

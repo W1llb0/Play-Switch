@@ -138,3 +138,303 @@
                 </div>
             </div>
         </header>
+        <main class="main">
+            <menu class="menu" id="menu">
+                <div class="menu__content">
+                    <div class="menu__sections">
+                        <a href="#" class="articles bot-menu__item">
+                            <img src="images/book-icon.svg" alt="">
+                            <p>Статьи</p>
+                        </a>
+                        <a href="#" class="reviews bot-menu__item">
+                            <img src="images/play-icon.svg" alt="">
+                            <p>Обзоры</p>
+                        </a>
+                        <a href="#" class="collection bot-menu__item">
+                            <img src="images/bookmark-icon.svg" alt="">
+                            <p>Коллекция</p>
+                        </a>
+                        <a href="#" class="sets bot-menu__item">
+                            <img src="images/star-icon.svg" alt="">
+                            <p>Сеты</p>
+                        </a>
+                        <div class="menu__game-genres">
+                            <a href="#" class="games-by-genre" id="games-by-genre">
+                                <p>Игры по жанрам</p>
+                            </a>
+                        </div>
+                        <div class="genre-list" id="genre-list">
+                            <?php
+                                $game_genre_list = get_field('game_genre_list');
+                                if( $game_genre_list ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_2 = get_field('game_genre_list_2');
+                                if( $game_genre_list_2 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo($game_genre_list_2['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_2['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_3 = get_field('game_genre_list_3');
+                                if( $game_genre_list ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_3['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_3['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_4 = get_field('game_genre_list_4');
+                                if( $game_genre_list_4 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_4['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_4['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_5 = get_field('game_genre_list_5');
+                                if( $game_genre_list_5 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_5['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_5['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_6 = get_field('game_genre_list_6');
+                                if( $game_genre_list_6 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_6['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_6['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_7 = get_field('game_genre_list_7');
+                                if( $game_genre_list_7 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_7['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_7['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_8 = get_field('game_genre_list_8');
+                                if( $game_genre_list_8 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_8['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_8['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_9 = get_field('game_genre_list_9');
+                                if( $game_genre_list_9 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_9['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_9['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_10 = get_field('game_genre_list_10');
+                                if( $game_genre_list_10 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_10['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_10['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                            <?php
+                                $game_genre_list_11 = get_field('game_genre_list_11');
+                                if( $game_genre_list_11 ): ?>
+                                    <a href="#" class="genre-list__item">
+                                        <div class="genre-list__image">
+                                            <img src="<?php echo( $game_genre_list_11['game_genre_list__image']); ?>" alt="">
+                                        </div>
+                                        <div class="genre-list__name">
+                                        <?php echo($game_genre_list_11['game_genre_list__text']); ?>
+                                        </div>
+                                    </a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <menu class="game-menu" id="game-menu">
+                <div class="game-menu__content">
+                    <div class="game-menu__genre-list" id="game-menu__genre-list">
+                        <?php
+                            $game_genre_list = get_field('game_genre_list');
+                            if( $game_genre_list ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_2 = get_field('game_genre_list_2');
+                            if( $game_genre_list_2 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo($game_genre_list_2['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_2['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_3 = get_field('game_genre_list_3');
+                            if( $game_genre_list ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_3['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_3['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_4 = get_field('game_genre_list_4');
+                            if( $game_genre_list_4 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_4['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_4['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_5 = get_field('game_genre_list_5');
+                            if( $game_genre_list_5 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_5['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_5['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_6 = get_field('game_genre_list_6');
+                            if( $game_genre_list_6 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_6['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_6['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_7 = get_field('game_genre_list_7');
+                            if( $game_genre_list_7 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_7['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_7['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_8 = get_field('game_genre_list_8');
+                            if( $game_genre_list_8 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_8['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_8['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_9 = get_field('game_genre_list_9');
+                            if( $game_genre_list_9 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_9['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_9['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_10 = get_field('game_genre_list_10');
+                            if( $game_genre_list_10 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_10['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_10['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                        <?php
+                            $game_genre_list_11 = get_field('game_genre_list_11');
+                            if( $game_genre_list_11 ): ?>
+                                <a href="#" class="genre-list__item">
+                                    <div class="genre-list__image">
+                                        <img src="<?php echo( $game_genre_list_11['game_genre_list__image']); ?>" alt="">
+                                    </div>
+                                    <div class="genre-list__name">
+                                    <?php echo($game_genre_list_11['game_genre_list__text']); ?>
+                                    </div>
+                                </a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </menu>

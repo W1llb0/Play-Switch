@@ -1,14 +1,14 @@
 <footer class="footer">
             <div class="container footer__container">
                 <div class="relevance">
-                    ©2022. Play Switch
+                    <?php the_field('year') ?>
                 </div>
                 <div class="logos">
                     <a href="#" class="logo-nintendo">
-                        <img src="images/logo-nintengo.png" alt="">
+                        <img src="<?php the_field('footer_img_1') ?>" alt="">
                     </a>
                     <a href="#" class="logo-super-nintendo">
-                        <img src="images/Nintendo-Switch-Logo.png" alt="">
+                        <img src="<?php the_field('footer_img_2') ?>" alt="">
                     </a>
                 </div>
                 <a href="#" class="development">

@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+define('ALLOW_UNFILTERED_UPLOADS', true);
+
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', 'Play-switch__wp' );

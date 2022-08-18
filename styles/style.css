@@ -295,6 +295,9 @@ a {
     display: none;
     width: 100%;
 }
+.genre-list.active a{
+    border: none;
+}
 
 .genre-list.active {
     display: grid;
@@ -429,7 +432,7 @@ a {
     color: #FFFFFF;
 }
 
-.game-banner1 {
+/* .game-banner1 {
     background: url('../images/game-banner1.png') no-repeat;
     background-size: cover;
 }
@@ -457,7 +460,7 @@ a {
 .game-banner6 {
     background: url('../images/game-banner6.png') no-repeat;
     background-size: cover;
-}
+} */
 
 .heroes-list {
     display: flex;
@@ -546,8 +549,8 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(0, 0, 0, 0.8)), url('../images/fresh-arrivals-background.png') no-repeat;
-    background-size: cover;
+    /* background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(0, 0, 0, 0.8)), url('../images/fresh-arrivals-background.png') no-repeat;
+    background-size: cover; */
     margin: 60px 0;
 }
 
@@ -712,8 +715,8 @@ a {
     width: 100%;
     /* max-width: 80%; */
     margin: auto;
-    background: url('../images/game-sets-image.png') no-repeat;
-    background-size: cover;
+    /* background: url('../images/game-sets-image.png') no-repeat;
+    background-size: cover; */
     height: 160px;
     border-radius: 20px;
     position: relative;
@@ -774,6 +777,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 60px;
+    padding: 20px 0;
 }
 
 .slider-navigation {
@@ -884,7 +888,7 @@ a {
     max-width: 420px;
 }
 
-.game-reviews__game1 {
+/* .game-reviews__game1 {
     background: url('../images/game-reviews__game1.png') no-repeat;
     background-size: cover;
 }
@@ -892,7 +896,7 @@ a {
 .game-reviews__game2 {
     background: url('../images/game-reviews__game2.png') no-repeat;
     background-size: cover;
-}
+} */
 
 .go-top-button {
     display: none;
@@ -2237,6 +2241,7 @@ a {
         width: 100%;
         max-width: 1200px;
         justify-content: space-between;
+        padding: 0;
     }
 
     .game-reviews {
