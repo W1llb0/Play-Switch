@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="<? echo get_template_directory_uri(); ?>/styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Play Switch</title>
 </head>
@@ -24,7 +24,7 @@
                 <div class="header__wrapper">
                     <div class="header__top-menu">
                         <div class="top-menu__left">
-                            <a href="#" class="game-burger">
+                            <a class="game-burger">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1640_467)">
                                         <path d="M7 0H4C2.93913 0 1.92172 0.421427 1.17157 1.17157C0.421427 1.92172 0 2.93913 0 4L0 7C0 8.06087 0.421427 9.07828 1.17157 9.82843C1.92172 10.5786 2.93913 11 4 11H7C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V4C11 2.93913 10.5786 1.92172 9.82843 1.17157C9.07828 0.421427 8.06087 0 7 0V0ZM9 7C9 7.53043 8.78929 8.03914 8.41421 8.41421C8.03914 8.78929 7.53043 9 7 9H4C3.46957 9 2.96086 8.78929 2.58579 8.41421C2.21071 8.03914 2 7.53043 2 7V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H7C7.53043 2 8.03914 2.21071 8.41421 2.58579C8.78929 2.96086 9 3.46957 9 4V7Z" fill="#929292"/>
@@ -40,7 +40,7 @@
                                 </svg>                                    
                             </a>
                             <div class="search-wrapper" id="search-wrapper">
-                                <a href="#" class="search">
+                                <a class="search">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1640_472)">
                                             <path d="M23.7068 22.293L17.7378 16.324C19.3644 14.3346 20.1642 11.7961 19.9716 9.23359C19.7791 6.67106 18.609 4.28056 16.7034 2.55655C14.7977 0.832537 12.3024 -0.0930816 9.73342 -0.0288498C7.16447 0.035382 4.71849 1.08455 2.9014 2.90164C1.08431 4.71873 0.0351379 7.16472 -0.029094 9.73367C-0.0933258 12.3026 0.832293 14.798 2.5563 16.7036C4.28031 18.6092 6.67081 19.7793 9.23334 19.9719C11.7959 20.1644 14.3344 19.3647 16.3238 17.738L22.2928 23.707C22.4814 23.8892 22.734 23.99 22.9962 23.9877C23.2584 23.9854 23.5092 23.8803 23.6946 23.6948C23.88 23.5094 23.9852 23.2586 23.9875 22.9964C23.9897 22.7342 23.8889 22.4816 23.7068 22.293ZM9.99978 18C8.41753 18 6.87081 17.5308 5.55522 16.6518C4.23963 15.7727 3.21425 14.5233 2.60875 13.0615C2.00324 11.5997 1.84482 9.99115 2.1535 8.4393C2.46218 6.88746 3.22411 5.46199 4.34293 4.34317C5.46175 3.22435 6.88721 2.46243 8.43906 2.15374C9.99091 1.84506 11.5994 2.00349 13.0613 2.60899C14.5231 3.21449 15.7725 4.23987 16.6515 5.55546C17.5306 6.87106 17.9998 8.41778 17.9998 10C17.9974 12.121 17.1538 14.1545 15.654 15.6543C14.1542 17.154 12.1208 17.9976 9.99978 18Z" fill="#929292"/>
@@ -70,14 +70,14 @@
                             </div>
                         </div>
                         <a href="#" class="header__logo">
-                            <img src="images/logo.svg" alt="">
+                            <img src="<? echo get_template_directory_uri(); ?>/images/logo.svg" alt="">
                         </a>
                         <div class="top-menu__right">
                             <a href="#" class="share">
-                                <img src="images/share.svg" alt="">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/share.svg" alt="">
                             </a>
                             <a href="#" class="mouse">
-                                <img src="images/mouse.svg" alt="">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/mouse.svg" alt="">
                             </a>
                             <div class="burger">
                                 <div></div>
@@ -143,19 +143,19 @@
                 <div class="menu__content">
                     <div class="menu__sections">
                         <a href="#" class="articles bot-menu__item">
-                            <img src="images/book-icon.svg" alt="">
+                            <img src="<? echo get_template_directory_uri(); ?>/images/book-icon.svg" alt="">
                             <p>Статьи</p>
                         </a>
                         <a href="#" class="reviews bot-menu__item">
-                            <img src="images/play-icon.svg" alt="">
+                            <img src="<? echo get_template_directory_uri(); ?>/images/play-icon.svg" alt="">
                             <p>Обзоры</p>
                         </a>
                         <a href="#" class="collection bot-menu__item">
-                            <img src="images/bookmark-icon.svg" alt="">
+                            <img src="<? echo get_template_directory_uri(); ?>/images/bookmark-icon.svg" alt="">
                             <p>Коллекция</p>
                         </a>
                         <a href="#" class="sets bot-menu__item">
-                            <img src="images/star-icon.svg" alt="">
+                            <img src="<? echo get_template_directory_uri(); ?>/images/star-icon.svg" alt="">
                             <p>Сеты</p>
                         </a>
                         <div class="menu__game-genres">
@@ -164,138 +164,94 @@
                             </a>
                         </div>
                         <div class="genre-list" id="genre-list">
-                            <?php
-                                $game_genre_list = get_field('game_genre_list');
-                                if( $game_genre_list ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_2 = get_field('game_genre_list_2');
-                                if( $game_genre_list_2 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo($game_genre_list_2['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_2['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_3 = get_field('game_genre_list_3');
-                                if( $game_genre_list ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_3['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_3['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_4 = get_field('game_genre_list_4');
-                                if( $game_genre_list_4 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_4['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_4['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_5 = get_field('game_genre_list_5');
-                                if( $game_genre_list_5 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_5['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_5['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_6 = get_field('game_genre_list_6');
-                                if( $game_genre_list_6 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_6['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_6['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_7 = get_field('game_genre_list_7');
-                                if( $game_genre_list_7 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_7['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_7['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_8 = get_field('game_genre_list_8');
-                                if( $game_genre_list_8 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_8['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_8['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_9 = get_field('game_genre_list_9');
-                                if( $game_genre_list_9 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_9['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_9['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_10 = get_field('game_genre_list_10');
-                                if( $game_genre_list_10 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_10['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_10['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
-                            <?php
-                                $game_genre_list_11 = get_field('game_genre_list_11');
-                                if( $game_genre_list_11 ): ?>
-                                    <a href="#" class="genre-list__item">
-                                        <div class="genre-list__image">
-                                            <img src="<?php echo( $game_genre_list_11['game_genre_list__image']); ?>" alt="">
-                                        </div>
-                                        <div class="genre-list__name">
-                                        <?php echo($game_genre_list_11['game_genre_list__text']); ?>
-                                        </div>
-                                    </a>
-                            <?php endif; ?>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/platform.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Platform
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/fighting.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Fighting
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/rpg.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    RPG
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/beatemup.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Beat’em Up
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/bullet-hell.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Bullet Hell
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/simulator.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Simulator
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/shooter.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Shoot’em All
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/Metroidovania.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Metroidovania
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/sport.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Sport
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/action.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Action
+                                </div>
+                            </div>
+                            <div class="genre-list__item">
+                                <div class="genre-list__image">
+                                    <img src="<? echo get_template_directory_uri(); ?>/images/adventure.svg" alt="">
+                                </div>
+                                <div class="genre-list__name">
+                                    Adventure
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,138 +259,94 @@
             <menu class="game-menu" id="game-menu">
                 <div class="game-menu__content">
                     <div class="game-menu__genre-list" id="game-menu__genre-list">
-                        <?php
-                            $game_genre_list = get_field('game_genre_list');
-                            if( $game_genre_list ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_2 = get_field('game_genre_list_2');
-                            if( $game_genre_list_2 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo($game_genre_list_2['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_2['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_3 = get_field('game_genre_list_3');
-                            if( $game_genre_list ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_3['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_3['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_4 = get_field('game_genre_list_4');
-                            if( $game_genre_list_4 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_4['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_4['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_5 = get_field('game_genre_list_5');
-                            if( $game_genre_list_5 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_5['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_5['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_6 = get_field('game_genre_list_6');
-                            if( $game_genre_list_6 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_6['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_6['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_7 = get_field('game_genre_list_7');
-                            if( $game_genre_list_7 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_7['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_7['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_8 = get_field('game_genre_list_8');
-                            if( $game_genre_list_8 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_8['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_8['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_9 = get_field('game_genre_list_9');
-                            if( $game_genre_list_9 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_9['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_9['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_10 = get_field('game_genre_list_10');
-                            if( $game_genre_list_10 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_10['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_10['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
-                        <?php
-                            $game_genre_list_11 = get_field('game_genre_list_11');
-                            if( $game_genre_list_11 ): ?>
-                                <a href="#" class="genre-list__item">
-                                    <div class="genre-list__image">
-                                        <img src="<?php echo( $game_genre_list_11['game_genre_list__image']); ?>" alt="">
-                                    </div>
-                                    <div class="genre-list__name">
-                                    <?php echo($game_genre_list_11['game_genre_list__text']); ?>
-                                    </div>
-                                </a>
-                        <?php endif; ?>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/platform.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Platform
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/fighting.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Fighting
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/rpg.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                RPG
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/beatemup.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Beat’em Up
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/bullet-hell.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Bullet Hell
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/simulator.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Simulator
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/shooter.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Shoot’em All
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/Metroidovania.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Metroidovania
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/sport.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Sport
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/action.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Action
+                            </div>
+                        </a>
+                        <a href="#" class="genre-list__item">
+                            <div class="genre-list__image">
+                                <img src="<? echo get_template_directory_uri(); ?>/images/adventure.svg" alt="">
+                            </div>
+                            <div class="genre-list__name">
+                                Adventure
+                            </div>
+                        </a>
                     </div>
                 </div>
             </menu>

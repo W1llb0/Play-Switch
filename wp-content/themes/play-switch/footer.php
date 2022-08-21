@@ -18,6 +18,6 @@
         </footer>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="<? echo get_template_directory_uri(); ?>/scripts/script.js"></script>
 </body>
 </html>
